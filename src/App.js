@@ -1,26 +1,20 @@
-import logo from './m51.jpg';
+import m51 from './m51.jpg';
 import './App.css';
 import React, { Component } from 'react';
-import TopNavBar from './topNavBar';
+import MainNavBar from './components/mainNavBar';
+import MainFooter from './components/mainFooter';
 
 function App() {
   return (
     <div className="App">
-        <header className="App-header">
-            <img src={logo} className="App-logo" alt="logo" />
-            <p>
-              This is a WIP professional page. Stay tuned!
-            </p>
-            <a
-              className="App-link"
-              href="https://reactjs.org"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-            Learn React
-            </a>
-        </header>
-        <TopNavBar />
+      <MainNavBar className="App-navbar"/>
+      <header className="App-header">
+        <img src={m51} className="App-header-image" alt="logo" />
+        <p f="small">
+          This is a WIP professional page. Stay tuned!
+        </p>
+      </header>
+      <MainFooter />
     </div>
   );
 }
